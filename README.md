@@ -23,5 +23,5 @@ Render Deploy
 | Index | /products   | GET    | Renders all products |
 | Create | /products  | POST    | Adds a product to the database |
 | Update | /products/:id   |  PUT   | Updates a product based on id |
-| Delete | /products/:id/   | DELETE   | Removes a product from the database |
-| Show | /products/:id/   | GET    | Renders a product based on id |
+| Delete | /products/:id   | DELETE   | Removes a product from the database |
+| Show | /products/:id   | GET    | Renders a product based on id |
