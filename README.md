@@ -15,7 +15,7 @@ Render Deploy
 ![Product](./images/schema.png)
 
 ## ERD
-![ERD](./images/erd.png)
+![ERD](./images/erd2.png)
 
 ## Route Map
 | Route name  | endpoint | method | Description                 |
