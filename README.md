@@ -12,10 +12,10 @@ Trello Board
 Render Deploy
 
 ## Schema
-![Product](./images/schema.png)
+![Product](./images/schema2.png)
 
 ## ERD
-![ERD](./images/erd2.png)
+![ERD](./images/erd3.png)
 
 ## Route Map
 
