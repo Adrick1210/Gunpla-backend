@@ -5,6 +5,13 @@
 ## Description
 This is the backend that will store all the items, inventory, and user data.
 
+## Resources
+- Mongo/Mongoose
+- Express
+- Cors
+- Morgan
+- Nodemon
+
 ## Links
 Trello Board
 - https://trello.com/b/oQuGD0QS/gunpla-galaxy?openListComposer=true
