@@ -1,5 +1,5 @@
 // DEPENDENCIES
-const mongoose = require("mongoose");
+const mongoose = require("../utils/db");
 
 // DEFINE
 const { Schema, model } = mongoose;
