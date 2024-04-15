@@ -1,19 +1,14 @@
 // DEPENDENCIES
-require("dotenv").config();
 const express = require("express");
-const morgan = require("morgan");
-const cors = require("cors");
-const PORT = process.env.PORT || 3075;
+const middleware = require("./utils/middleware");
 const ProductRouter = require("./controllers/product");
-const AdminRouter = require("./controllers/admin")
+const AdminRouter = require("./controllers/admin");
 
 // APP
 const app = express();
 
 // MIDDLEWARE
-app.use(morgan("dev"));
-app.use(cors());
-app.use(express.json());
+middleware(app);
 
 // ROUTERS
 app.use("/products", ProductRouter);
@@ -25,6 +20,7 @@ app.get("/", (req, res) => {
 });
 
 // LISTENER
+const PORT = process.env.PORT || 3075;
 app.listen(PORT, () => {
   console.log(`Products showing ${PORT}`);
 });
