@@ -1,18 +1,14 @@
 // DEPENDENCIES
 const express = require("express");
 const middleware = require("./utils/middleware");
-const ProductRouter = require("./controllers/product");
-const AdminRouter = require("./controllers/admin");
+const routers = require("./utils/routers");
 
 // APP
 const app = express();
 
 // MIDDLEWARE
 middleware(app);
-
-// ROUTERS
-app.use("/products", ProductRouter);
-app.use("/admin", AdminRouter);
+routers(app);
 
 //TEST ROUTE
 app.get("/", (req, res) => {
