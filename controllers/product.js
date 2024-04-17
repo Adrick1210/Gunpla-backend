@@ -7,22 +7,21 @@ const router = express.Router();
 
 // INDEX
 router.get("/", async (req, res) => {
-  const { page = 1, limit = 10 } = req.query;
+  const { page = 1, limit = 12 } = req.query;
   try {
     
       const products = await Products.find({})
         .limit(limit * 1)
-        .skip((page - 1) * limit)
-        .exec();
+        .skip((page - 1) * limit);
 
       const count = await Products.countDocuments();
 
     res.json({
       products,
       totalPages: Math.ceil(count / limit),
-      currentPage: page,
+      currentPage: Number(page),
     })
-    
+
   } catch (err) {
     res.status(400).json(err);
   }
